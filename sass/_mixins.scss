@@ -1,0 +1,8 @@
+@mixin errorStyles{
+    display: none;
+    position: absolute;
+	top: 83%;
+	transform: translate(-50%, -50%);
+	color: red;
+	font-size: 1.3rem;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/6ee12b0358.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="todo">
+        <div class="todo__header">
+            <!-- <h1 class="todo__header-title">Todo list</h1> -->
+            <div class="todo__header-btns">
+                <button class="todo__header-btn-logo"><i class="fa-solid fa-check"></i></button>
+
+                <div class="todo__header-btns-right">
+                    <button class="todo__header-btn todo__header-btn--add"><i class="fa-solid fa-plus"></i></button>
+                    <button class="todo__header-btn todo__header-btn--remove"><i
+                            class="fa-regular fa-trash-can"></i></button>
+                </div>
+                <div class="todo__header-btns-left">
+                    <button class="todo__header-btn todo__header-btn--find"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="todo__header-btn todo__header-btn--sort"><i class="fa-solid fa-sort-up"></i></button>
+                </div>
+            </div>
+
+            <!-- <div class="todo__search-area">
+                <div class="todo__search-area-box">
+                    <input type="text" class="todo__search-engine">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div> -->
+        </div>
+
+        <table class="todo__table">
+            <thead class="todo__table-header">
+                <tr class="todo__table-header-row">
+                    <td class="todo__search-area-box" colspan="5">
+                        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                        <input type="text" placeholder="Imię i nazwisko" class="todo__search-engine">
+                    </td>
+                </tr>
+                <tr class="todo__table-header-row">
+                    <th class="todo__table-header-name">Imię i nazwisko</th>
+                    <th class="todo__table-header-task">Zadanie</th>
+                    <th class="todo__table-header-date">Data utworzenia</th>
+                    <th class="todo__table-header-priority">Priorytet</th>
+                    <th class="todo__table-header-action">Akcja</th>
+                </tr>
+            </thead>
+            <tbody class="todo__table-body">
+                <tr class="todo__table-row">
+                    <td class="todo__table-cell-name">
+                        <div class="todo__table-cell-name-box"><img src="/img/man1.png" alt=""
+                                class="todo__table-cell-img">
+                            <p>Adam Nowak</p>
+                        </div>
+                    </td>
+                    <td class="todo__table-cell-task">Nauka angielskiego</td>
+                    <td class="todo__table-cell-date">25 czerwiec 2023</td>
+                    <td class="todo__table-cell-priority"><button class="todo__btn todo__btn--high" data-priority="high"
+                            data-priority-number="2">Wysoki</button></td>
+                    <td class="todo__table-cell-tools">
+                        <button class="todo__table-btn todo__table-btn--complete"><i
+                                class="fa-solid fa-check"></i></button>
+                        <button class="todo__table-btn todo__table-btn--edit"><i
+                                class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="todo__table-btn todo__table-btn--remove"><i
+                                class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr class="todo__table-row">
+                    <td class="todo__table-cell-name">
+                        <div class="todo__table-cell-name-box"><img src="/img/man2.png" alt=""
+                                class="todo__table-cell-img">
+                            <p>Adam Nowak</p>
+                        </div>
+                    </td>
+                    <td class="todo__table-cell-task">Nauka angielskiego</td>
+                    <td class="todo__table-cell-date">25 czerwiec 2023</td>
+                    <td class="todo__table-cell-priority"><button class="todo__btn todo__btn--high" data-priority="high"
+                            data-priority-number="2">Wysoki</button></td>
+                    <td class="todo__table-cell-tools">
+                        <button class="todo__table-btn todo__table-btn--complete"><i
+                                class="fa-solid fa-check"></i></button>
+                        <button class="todo__table-btn todo__table-btn--edit"><i
+                                class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="todo__table-btn todo__table-btn--remove"><i
+                                class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr class="todo__table-row">
+                    <td class="todo__table-cell-name">
+                        <div class="todo__table-cell-name-box"><img src="/img/woman1.png" alt=""
+                                class="todo__table-cell-img">
+                            <p>Adam Nowak</p>
+                        </div>
+                    </td>
+                    <td class="todo__table-cell-task">Nauka angielskiego</td>
+                    <td class="todo__table-cell-date">25 czerwiec 2023</td>
+                    <td class="todo__table-cell-priority"><button class="todo__btn todo__btn--medium"
+                            data-priority="medium" data-priority-number="1">Średni</button></td>
+                    <td class="todo__table-cell-tools">
+                        <button class="todo__table-btn todo__table-btn--complete"><i
+                                class="fa-solid fa-check"></i></button>
+                        <button class="todo__table-btn todo__table-btn--edit"><i
+                                class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="todo__table-btn todo__table-btn--remove"><i
+                                class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr class="todo__table-row">
+                    <td class="todo__table-cell-name">
+                        <div class="todo__table-cell-name-box"><img src="/img/man3.png" alt=""
+                                class="todo__table-cell-img">
+                            <p>Adam Nowak</p>
+                        </div>
+                    </td>
+                    <td class="todo__table-cell-task">Nauka angielskiego</td>
+                    <td class="todo__table-cell-date">25 czerwiec 2023</td>
+                    <td class="todo__table-cell-priority"><button class="todo__btn todo__btn--low" data-priority="low"
+                            data-priority-number="0">Niski</button></td>
+                    <td class="todo__table-cell-tools">
+                        <button class="todo__table-btn todo__table-btn--complete"><i
+                                class="fa-solid fa-check"></i></button>
+                        <button class="todo__table-btn todo__table-btn--edit"><i
+                                class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="todo__table-btn todo__table-btn--remove"><i
+                                class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr class="todo__table-row">
+                    <td class="todo__table-cell-name">
+                        <div class="todo__table-cell-name-box"><img src="/img/man4.png" alt=""
+                                class="todo__table-cell-img">
+                            <p>Adam Nowak</p>
+                        </div>
+                    </td>
+                    <td class="todo__table-cell-task">Nauka angielskiego</td>
+                    <td class="todo__table-cell-date">25 czerwiec 2023</td>
+                    <td class="todo__table-cell-priority"><button class="todo__btn todo__btn--low" data-priority="low"
+                            data-priority-number="0">Niski</button></td>
+                    <td class="todo__table-cell-tools">
+                        <button class="todo__table-btn todo__table-btn--complete"><i
+                                class="fa-solid fa-check"></i></button>
+                        <button class="todo__table-btn todo__table-btn--edit"><i
+                                class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="todo__table-btn todo__table-btn--remove"><i
+                                class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <!-- <tr class="todo__table-row">
+                    <td class="todo__table-cell-name todo__table-input"><img src="/img/question-mark.jpg" alt="" class="todo__table-cell-img"><input type="text"></td>
+                    <td class="todo__table-input"><input type="text"></td>
+                    <td class="todo__table-input">25 czerwiec 2023</td>
+                    <td class="todo__table-input">
+                        <select name="priority">
+                            <option value="low">Niski</option>
+                            <option value="medium">Średni</option>
+                            <option value="high">Wysoki</option>
+                        </select>
+                    </td>
+                    <td class="todo__table-cell-tools">
+                        <button class="todo__table-btn todo__table-btn--add"><i class="fa-solid fa-check"></i></button>
+                        <button class="todo__table-btn todo__table-btn--cancel"><i class="fa-solid fa-xmark"></i></button>
+                    </td>
+                </tr> -->
+                <!--                 
+                <tr class="todo__table-row-inputs">
+                    <td class="todo__table-cell-name todo__table-input-name">
+                     <div class="todo__table-cell-name-box"><img src="/img/question-mark.jpg" alt="" class="todo__table-cell-img">
+                    <input type="text"></div>
+                    <p class="todo__error">Wprowadź imię i nazwisko</p>
+                </td>
+                    <td class="todo__table-input-task"><input type="text">
+                        <p class="todo__error">Wprowadź zadanie</p>
+                    </td>
+                    <td class="todo__table-input-date">28 styczeń 2024</td>
+                    <td class="todo__table-input-priority">
+                        <select name="priority" id="priority">
+                            <option value="low">Niski</option>
+                            <option value="medium">Średni</option>
+                            <option value="high">Wysoki</option>
+                        </select>
+                    </td>
+                    <td class="todo__table-cell-input-tools">
+                        <button class="todo__table-btn todo__table-btn--add"><i class="fa-solid fa-check" aria-hidden="true"></i></button>
+                        <button class="todo__table-btn todo__table-btn--remove"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                    </td></tr> -->
+
+                <!-- <tr class="todo__table-row-inputs">
+                    <td class="todo__table-cell-name todo__table-input-name">
+                 <div class="todo__table-cell-name-box"><img src="/img/question-mark.jpg" alt="" class="todo__table-cell-img">
+                    <input type="text">
+                    <p class="todo__error-name">Podaj imię i nazwisko</p>
+                    </div>
+                    </td>
+                    <td class="todo__table-input-task">
+                        <input type="text">
+                        <p class="todo__error-task">Podaj zadanie</p>
+                    </td>
+                    <td class="todo__table-input-date">28 styczeń 2024</td>
+                    <td class="todo__table-input-priority">
+                        <select name="priority" id="priority">
+                            <option value="low">Niski</option>
+                            <option value="medium">Średni</option>
+                            <option value="high">Wysoki</option>
+                        </select>
+                    </td>
+                    <td class="todo__table-cell-input-tools">
+                        <button class="todo__table-btn todo__table-btn--add"><i class="fa-solid fa-check" aria-hidden="true"></i></button>
+                        <button class="todo__table-btn todo__table-btn--remove"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                    </td></tr> -->
+            </tbody>
+        </table>
+        <div class="todo__pagination">
+            <p class="todo__pagination-text">Wyświetlono 5 z 5 zadań</p>
+            <ul class="todo__pagination-list">
+                <li class="todo__pagination-list-item todo__pagination-list-item-previous" disabled><i
+                        class="fa-solid fa-caret-left"></i></li>
+                <li class="todo__pagination-list-item todo__pagination-list-item-active" data-page-number="0">1</li>
+                <!-- <li class="todo__pagination-list-item" data-page-number="1">2</li>
+                <li class="todo__pagination-list-item" data-page-number="2">3</li>
+                <li class="todo__pagination-list-item" data-page-number="3">4</li>
+                <li class="todo__pagination-list-item" data-page-number="4">5</li> -->
+                <li class="todo__pagination-list-item todo__pagination-list-item-next" disabled><i
+                        class="fa-solid fa-caret-right"></i></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="popup">
+        <div class="popup__top">
+            <div class="popup__top-circle">
+                <i class="fa-regular fa-trash-can"></i>
+            </div>
+        </div>
+        <div class="popup__bottom">
+            <p class="popup__bottom-title">Usuń wszystko</p>
+            <p class="popup__bottom-text">Jesteś pewien, że chcesz usunąć wszystkie zadania?</p>
+            <div class="popup__bottom-buttons">
+                <button class="popup__bottom-button popup__bottom-button--confirm"><i
+                        class="fa-regular fa-circle-check"></i> Potwierdź</button>
+                <button class="popup__bottom-button popup__bottom-button--cancel"><i
+                        class="fa-regular fa-circle-xmark"></i> Anuluj</button>
+            </div>
+        </div>
+    </div>
+    <div class="shadow"></div>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
